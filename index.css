@@ -1,0 +1,72 @@
+* {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+body {
+  background-color: cornflowerblue;
+}
+
+h2 {
+  border: 0;
+  border-radius: 6px;
+  width: 20rem;
+  font-family: monospace;
+  font-size: 1.4rem;
+  background-color: rgb(3, 43, 62);
+  padding: 1rem;
+  animation: color-change 10s infinite;
+  animation-timing-function: ease-in-out;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  justify-content: center;
+}
+
+h2:hover {
+  transform: scale(0.98);
+  cursor: pointer;
+  transition: ease 0.3s;
+  padding: 1.9rem;
+}
+
+@keyframes color-change {
+  0% {
+    color: #fff;
+  }
+  12.5% {
+    color: rgb(147, 98, 170);
+  }
+  25% {
+    color: rgba(255, 108, 211, 0.63);
+  }
+  37.5% {
+    color: #fff;
+  }
+  50% {
+    color: cornflowerblue;
+  }
+  62.5% {
+    color: rgb(153, 255, 226);
+  }
+  75% {
+    color: rgb(197, 157, 184);
+  }
+  87.5% {
+    color: rgb(163, 163, 163);
+  }
+  100% {
+    color: #fff;
+  }
+}
